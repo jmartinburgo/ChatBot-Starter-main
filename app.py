@@ -15,7 +15,7 @@ app=Flask(__name__)
 def index():
     return render_template("chat.html")
 
-@app.route("/get" methods=["GET","POST"])
+@app.route("/get", methods=["GET", "POST"])
 
 def chat():
     msg=request.form["msg"]
