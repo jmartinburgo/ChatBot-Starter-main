@@ -23,6 +23,8 @@ def chat():
     return get_Chat_response(input)
 
 def get_Chat_response(text):
+
+    chat_history_ids = None
         # Let's chat for 5 lines
     for step in range(5):
         # encode the new user input, add the eos_token and return a tensor in Pytorch
